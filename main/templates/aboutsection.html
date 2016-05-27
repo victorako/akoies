@@ -1,0 +1,48 @@
+{% load staticfiles %}
+{% load textblock %}
+<!-- Start Feature Area -->
+<section id="feature-area" class="about-section">
+<div class="container">
+    <div class="row text-center inner dsp-table">
+        <div class="col-sm-4">
+            <div class="feature-content shadow text-left">
+                <div class="image-container">
+                    <img src="{% static 'img/1-1.jpg' %}" alt="Image">
+                </div>
+                <h2 class="feature-content-title green-text">
+                    {% block_title 'feature1' user textblocks %}
+                </h2>
+                <p class="feature-content-description">
+                    {% block_text 'feature1' user textblocks %}
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="feature-content shadow text-left">
+                <div class="image-container">
+                    <img src="{% static 'img/1-2.jpg' %}" alt="Image">
+                </div>
+                <h2 class="feature-content-title blue-text">
+                    {% block_title 'feature2' user textblocks %}
+                </h2>
+                <p class="feature-content-description">
+                    {% block_text 'feature2' user textblocks %}
+                </p>                    
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="feature-content shadow text-left">
+                <div class="image-container">
+                    <img src="{% static 'img/1-3.jpg' %}" alt="Image">
+                </div>
+                <h2 class="feature-content-title red-text">
+                    {% block_title 'feature3' user textblocks %}
+                </h2>
+                <p class="feature-content-description">{% block_text 'feature3' user textblocks %}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- End Feature Area -->

@@ -1,0 +1,41 @@
+{% load staticfiles %}
+{% load textblock %}
+<!-- Start Contact Area -->
+<section id="contact-area" class="contact-section">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center inner">
+           <div class="contact-content">
+              <h1>{% block_title 'contact' user textblocks %}</h1>
+              <div class="row">                            
+                 <div class="col-sm-12">
+                    <p>{% block_text 'contact' user textblocks %}</p>
+                   </div>                            
+               </div>
+
+           </div>
+       </div>
+   </div>
+   <div class="row">
+       <div class="col-lg-12">
+            <form action="#" method="post" class="contact-form">
+                {% csrf_token %}
+                <div class="col-sm-6 contact-form-left">
+                    <div class="form-group">
+                        <!-- <input name="name" type="text" class="form-control" id="name" placeholder="Name"> -->
+                        <input type="email" name="email" class="form-control" id="mail" placeholder="Email">
+                        <!-- <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject"> -->
+                        <a name="message" type="submit" class="btn btn-d btn-lg btn-sq btn-block">Send</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 contact-form-right">
+                    <div class="form-group">
+                       <textarea name="message" rows="6" class="form-control" id="comment" placeholder="Your message here..."></textarea>
+                   </div>
+                </div>                        
+            </form>    
+        </div>                
+    </div>
+</div>
+</section>
+<!-- End Contact Area -->

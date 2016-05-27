@@ -1,0 +1,19 @@
+{% load staticfiles %}
+{% load textblock %}
+<header id="header-area" class="intro-section">
+    <div class="container" style="position: relative;">
+        <div class="row transp-index">
+            <div class="col-sm-12 text-center">
+                <div class="header-content">
+                    <h1> {% block_title 'title' user textblocks %} </h1>
+                    <h4>{% block_text 'title' user textblocks %} </h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <iframe id="video-frame" class="col-sm-12" height="600" frameborder="0" wmode="Opaque" allowfullscreen="" src="https://www.youtube.com/embed/I1DmAB8sjgU?wmode=transparent"></iframe>
+            </div>
+        </div>
+    </div>
+</header>

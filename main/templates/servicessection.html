@@ -1,0 +1,16 @@
+{% load staticfiles %}
+{% load textblock %}
+<!-- Start Services Area -->
+<section id="services-area" class="services-section">
+   <div class="container">
+    <div class="row">
+     <div class="col-sm-12 text-center inner our-service">
+      <div class="service">
+       <h1>{% block_title 'serviciostitle' user textblocks %}</h1>
+       {% block_text 'serviciostitle' user textblocks %}
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End Services Area -->

@@ -1,0 +1,61 @@
+{% load staticfiles %}
+{% load textblock %}
+<!-- Start Footer Area -->
+<div class="bloc bgc-white b-divider bg-lines-h-bg l-bloc bg-repeat" id="bloc-11">
+    <div class="container bloc-md">
+
+        <div class="row">
+            <div class="col-sm-3">
+                <h3 class="mg-md">
+                    About
+                </h3><a href="{% url 'home' %}" class="a-btn a-block">The team</a><a href="{% url 'contact' %}" class="a-btn a-block">Contact us</a>
+            </div>
+            <div class="col-sm-3">
+                <h3 class="mg-md">
+                    Get the App
+                </h3>
+                <a href="https://itunes.apple.com/es/app/home-smart-home-automation/id995994352?mt=8&ign-mpt=uo%3D4" class="a-btn a-block">iOS</a>
+                <a href="{% url 'home' %}" class="a-btn a-block">Android</a>
+            </div>
+            <div class="col-sm-3">
+                <h3 class="mg-md">
+                    Follow us
+                </h3><a href="{% url 'home' %}" class="a-btn a-block">Twitter</a><a href="{% url 'home' %}" class="a-btn a-block">Facebook</a>
+            </div>
+            <div class="col-sm-3">
+                <h3 class="mg-md">
+                    Company
+                </h3><a href="{% url 'home' %}" class="a-btn a-block">Terms of use</a><a href="{% url 'home' %}" class="a-btn a-block">Privacy</a>
+            </div>
+        </div>
+        <div class="row mt-50">
+         <div class="col-sm-12 text-center">             
+          <p class="copy">Copyright © 2016 ZOE HUB | Design by <a rel="nofollow" href="https://github.com/lgarest" target="_parent">Luis García Estrades</a></p>
+        </div>
+    </div>
+</div>
+{% comment "optional note" %}
+    
+<div class="container">
+   <div class="row text-center">
+    <div class="col-sm-12">
+     <div class="footer-content">
+      <h1>{% block_title 'footer' user textblocks %}</h1>
+      <p>{% block_text 'footer' user textblocks %}</p>
+     </div>                
+   </div>
+ </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+   <div class="col-sm-12 text-center">             
+    <p class="copy">Copyright © 2016 ZOE HUB | Design by <a rel="nofollow" href="https://github.com/lgarest" target="_parent">Luis García Estrades</a></p>
+  </div>
+</div>
+  
+</div>
+{% endcomment %}
+
+<!-- End Footer Area -->

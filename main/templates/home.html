@@ -1,0 +1,271 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+{% load textblock %}
+
+{% block title %}
+Smart Independence
+{% endblock title %}
+
+{% block content %}
+<!-- carrousel -->
+<div class="bloc l-bloc bgc-white" id="bloc-1" style="padding: 0;">
+    <div class="container" style="overflow-y: hidden;">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="carousel-home" class="carousel slide no-shadows" data-ride="carousel" style="height: 657px;">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-home" data-slide-to="0" class="active" style="border: 1px solid black;">
+                        </li>
+                        <li data-target="#carousel-home" data-slide-to="1" style="border: 1px solid black;">
+                        </li>
+                        <li data-target="#carousel-home" data-slide-to="2"  style="border: 1px solid black;">
+                        </li>
+                        <li data-target="#carousel-home" data-slide-to="3"  style="border: 1px solid black;">
+                        </li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="{% static 'img/ZOE-Smart-Independence.png' %}" />
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="#zoehubvideocontent">
+                                <img src="{% static 'img/ZOE-Cover-2.png' %}" />
+                            </a>
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                            
+                        <div class="item">
+                            <a href="{% url 'zoehub' %}">
+                                <img src="{% static 'img/ZOEHUB1.png' %}" style="padding-top: 100px;" />
+                            </a>
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <a href="{% url 'zoeai' %}">
+                                <img src="{% static 'img/ZOEAICover.png' %}" style="padding-top: 100px;" />
+                            </a>
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+
+                        
+                    </div><a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev"><span class="fa fa-chevron-left c-black"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-home" role="button" data-slide="next"><span class="fa fa-chevron-right c-black"></span><span class="sr-only">Next</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- intro -->
+<div class="bloc l-bloc bgc-white mt-200" id="bloc-3">
+    <div class="container">
+        <div class="row pb-50">
+            <div class="col-sm-12">
+                <h3 class="mg-md text-center f-60">
+                HUB + AI
+                </h3>
+                <p class="text-center f-25">
+                    Add as many or few smart devices as you want, choreograph them to work with <em> ZOE HUB & AI </em>
+                    , and create a smarter home that automatically reacts as life happens.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'img/ZOE-Get-Started-AI.png' %}" class="img-responsive" />
+            </div>
+            <div class="col-sm-6">
+                <h2 class="mg-lg">
+                    Enhance your devices to the next level.
+                </h2>
+                <p class="mg-lg">
+                    ZOE AI adds an AI layer to your different smart home devices, gathers data of wearables, smartphones, and IoT devices. This information is end-to-end encrypted and sent to our servers to be processed in real time understanding situations and the environment. <br><br>
+
+                    The processed data is returned automatically adapted to the involved devices. In other words, ZOE AI knows what do you want at any moment. As long as ZOE AI lives within your home, it learns about your habits and your lifestyle.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bloc l-bloc bgc-white mt-200" id="bloc-3">
+    <div class="container">
+        <div class="row pb-50">
+            <div class="col-sm-12">
+                <h3 class="mg-md text-center f-60">
+                HUB
+                </h3>
+                <p class="text-center f-25">
+                    The <em>ZOE HUB</em> is compatible with hundreds of connected devices. Add the products you love and personalize how your smart home works.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'img/ZOE_HUB.png' %}" class="img-responsive" />
+            </div>
+            <div class="col-sm-6">
+                <h2 class="mg-lg">
+                    One HUB for Your Smart Home
+                </h2>
+                {% comment "optional note" %}
+                    
+                <h3 class="mg-sm">
+                    A more descriptive sub heading.
+                </h3>
+                {% endcomment %}
+                <p class="mg-lg">
+                    Whether you have two smart devices or 200, all you need is ZOE HUB to create a smart home. Like a live-in translator, the HUB communicates with all of your different connected products–regardless of their wireless protocol–so that you can easily monitor and control them from the ZOE app. <br><br>ZOE HUB contains ZigBee, Bluetooth and WiFi radios. There's no hard-wiring or installation needed. Simply connect it to your Internet router using the included Ethernet cable or through WiFi, attach the power cord to the back of the HUB, and you're ready to start creating a safer, more efficient smarter home.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- solucion -->
+<div class="bloc l-bloc bgc-white mt-200" id="zoehubvideocontent">
+    <div class="container">
+        <div class="row pb-50">
+            <div class="col-sm-12">
+                <h3 class="mg-md text-center f-60">
+                    Watch the demo
+                </h3>
+                <p class="text-center f-25">
+                    See how ZOE AI works in your daily basics.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HwdEevDR2J8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            {% comment "optional note" %}
+                
+            <div class="col-sm-4">
+                <h3 class="mg-md">
+                    Impressive right?
+                </h3>
+                <p>
+
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                </p>
+            </div>
+            {% endcomment %}
+        </div>
+    </div>
+</div>
+
+<!-- get started -->
+<div class="bloc l-bloc bgc-white mt-200 mb-200" id="bloc-7">
+    <div class="container">
+    <div class="row pb-50">
+        <div class="col-sm-12">
+            <h3 class="mg-md text-center f-60">
+                Get started
+            </h3>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+                <div class="col-sm-6">
+                    <div class="panel">
+                        <div class="panel-heading custom">    
+                            <img src="{% static 'img/ZOE_HUB.png' %}" class="img-responsive" style="background-color: #072733"/>
+                            <h2 class="mg-clear text-center">
+                                ZOE HUB
+                            </h2>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-unstyled list-sp-md">
+                                <li>
+                                    <h4 class="text-center mg-md">
+                                        Connecting all your smart devices<br>from one central place
+                                    </h4>
+                                </li>
+                                
+                                <li>
+                                    <h4 class="text-center mg-md">
+                                        Only $59.99 
+                                        <em class="small"> (Includes 3 months <br> subscription of ZOE AI*) </em>
+                                        
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-center mg-md small">
+                                    <em> *Only for new accounts </em>
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="{% url 'zoehub' %}" class="btn btn-d btn-lg btn-sq btn-block">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel">
+                        <div class="panel-heading custom">
+                            <img src="{% static 'img/ZOE-Get-Started-AI.png' %}" class="img-responsive" style="background-color: #072733"/>
+                            <h2 class="mg-clear text-center">
+                                ZOE AI
+                            </h2>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-unstyled list-sp-md">
+                                <li>
+                                    <h4 class="text-center mg-md">
+                                        Proactive learning home assistant<br>&nbsp;
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-center mg-md">
+                                        Only $9.99/month *<br>&nbsp;
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-center mg-md small">
+                                    <em>
+                                        * At least one ZOE HUB is required
+                                    </em>
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="{% url 'zoeai' %}" class="btn btn-d btn-lg btn-sq btn-block">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    {% comment "optional note" %}
+        
+    <!-- <div id="homeSection">{% include "homesection.html" %}</div>
+
+    <div id="aboutZoe">
+        {% include "aboutsection.html" %}
+        {% include "blogsection.html" %}
+    </div>
+    <div id="service">
+        {% include "servicessection.html" %}
+        {% include "testimoniessection.html" %}
+    </div>
+
+    <div id="contactSection">{% include 'contactform.html' %}</div> -->
+    {% endcomment %}
+
+{% endblock content %}

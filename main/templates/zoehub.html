@@ -1,0 +1,306 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+{% load textblock %}
+
+{% block title %} HUB {% endblock title %}
+
+{% block content %}
+
+<div class="bloc l-bloc bgc-white" id="bloc-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+            <a href="#compatibilities">
+                
+                <img src="{% static 'img/ZOEHUB1.png' %}" class="img-responsive shadow" />
+            </a>
+            </div>
+            {% comment "optional note" %}
+                
+            <div class="col-sm-12 vertical-middle" style="position: absolute; top:38%; left: 20%;">
+            <span>
+                
+                Hola que tal
+            </span>
+            </div>
+            {% endcomment %}
+        </div>
+    </div>
+</div>
+
+<!-- picture2 -->
+<div class="bloc l-bloc bgc-white mt-200">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="mg-md text-center f-60">
+                    ZOE HUB
+                </h3>
+                <p class="text-center f-25">
+                    The <em>ZOE HUB</em> is compatible with hundreds of connected devices. Add the products you love and personalize how your smart home works.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="{% static 'img/ZOEHUB2.png' %}" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- features -->
+<div class="bloc l-bloc bgc-white mt-200">
+    <div class="container">
+        <div class="row pb-50">
+            <div class="col-sm-12">
+                <h3 class="mg-md text-center f-60">
+                    Features
+                </h3>
+                <p class="text-center f-25">
+                    You will love all of them
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <span class="fa fa-heart icon-round icon-md"></span>
+                </div>
+                <h3 class="text-center mg-md">
+                    Modern design
+                </h3>
+                <p class="text-center">
+                    Clean and simple. Designed to fit in every home.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <span class="fa fa-cogs icon-round icon-md"></span>
+                </div>
+                <h3 class="text-center mg-md">
+                    Easy to install
+                </h3>
+                <p class="text-center">
+                    Plug the HUB, download the app and follow the instructions. ZOE HUB will be running in less than 2 minutes.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <span class="fa fa-leaf icon-round icon-md"></span>
+                </div>
+                <h3 class="text-center mg-md">
+                    Eco-friendly
+                </h3>
+                <p class="text-center">
+                    Made of highly reciclable materials. Built with super low power intake components, consumes ~0.7W.
+                </p>
+            </div>
+
+        </div>
+        <div class="row mt-50">
+            <div class="col-sm-3">
+                <div class="text-center">
+                    <span class="fa fa-signal icon-round icon-md"></span>
+                </div>
+                <h3 class="text-center mg-md">
+                    Connectivity
+                </h3>
+                <p class="text-center">
+                    Connect with no effort with other devices through WiFi, BlueTooth or ZigBee. It will detect and integrate automatically known devices.
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <div class="text-center">
+                    <span class="fa fa-cloud-download icon-round icon-md"></span>
+                </div>
+                <h3 class="text-center mg-md">
+                    Updates
+                </h3>
+                <p class="text-center">
+                    Receive automatic updates from the beginning with no charge. We commit to add new devices each month.
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <div class="text-center">
+                    <span class="fa fa-code icon-round icon-md"></span>
+                </div>
+                <h3 class="text-center mg-md">
+                    Powerful
+                </h3>
+                <p class="text-center">
+                    2GHz ARM11 core. 1024MB of LPDDR2 SDRAM. Wi-Fi 5.0GHz, Bluetooth 4.1 OS. Super low power intake components.
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <div class="text-center">
+                    <span class="fa fa-lock icon-round icon-md"></span>
+                </div>
+                <h3 class="text-center mg-md">
+                    Encryptation
+                </h3>
+                <p class="text-center">
+                    All your data is encrypted with a E2EE system, encryption keys are only known to you and our servers.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <p class="mg-lg mt-50">
+                    Whether you have two smart devices or 200, all you need is ZOE HUB to create a smart home. Like a live-in translator, the HUB communicates with all of your different connected products–regardless of their wireless protocol–so that you can easily monitor and control them from the ZOE app. <br><br>ZOE HUB contains ZigBee, Bluetooth and WiFi radios. There's no hard-wiring or installation needed. Simply connect it to your Internet router using the included Ethernet cable or through WiFi, attach the power cord to the back of the HUB, and you're ready to start creating a safer, more efficient smarter home.
+                </p>
+        </div>
+    </div>
+</div>
+
+<!-- compatibilities -->
+<div class="bloc l-bloc bgc-white mt-200" id="compatibilities">
+    <div class="container">
+        <div class="row pb-50">
+            <div class="col-sm-12">
+                <h3 class="mg-md text-center f-60">
+                    Plays well with others
+                </h3>
+                <p class="text-center f-25">
+                    Some of the brands ZOE HUB is compatible with:
+                </p>
+            </div>
+        </div>
+        <div class="row voffset">
+            <div class="col-sm-3">
+                <img src="{% static 'img/Disp-Compatibles/1AmazonEcho.jpeg' %}" class="img-responsive shadow" /></a>
+                <h3 class="mg-md text-center">
+                    Amazon Echo
+                </h3>
+                <p class="text-center">
+                    Always ready, connected, and fast. Just ask.
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'img/Disp-Compatibles/1Automatic-Coffee-Machine-Coffee-font-b-Maker-b-font-Espresso-Cafetera-Espresso-Cappuccino-Moka-Pot-Cafeteira.jpg' %}" class="img-responsive shadow" /></a>
+                <h3 class="mg-md text-center">
+                    Philips Automatic-Coffee
+                </h3>
+                <p class="text-center">
+                    Enjoy a variety of 18 specialities with a touch.
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'img/Disp-Compatibles/1greenIQ-riego-Automatico.jpg' %}" class="img-responsive shadow" /></a>
+                <h3 class="mg-md text-center">
+                    greenIQ
+                </h3>
+                <p class="text-center">
+                    Smart Garden Hub.
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'img/Disp-Compatibles/1HUE-Philips-ambiente-habitacion.jpg' %}" class="img-responsive shadow" /></a>
+                <h3 class="mg-md text-center">
+                    Philips lighting
+                </h3>
+                <p class="text-center">
+                    Personal wireless lighting. Lighting has changed.
+                </p>
+            </div>
+        </div>
+        <div class="row voffset">
+            <div class="col-sm-3">
+                <img src="{% static 'img/Disp-Compatibles/thermostat2.png' %}" class="img-responsive shadow" /></a>
+                <h3 class="mg-md text-center">
+                    Nest
+                </h3>
+                <p class="text-center">
+                    The brighter way to save energy.
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'img/Disp-Compatibles/nevera2.png' %}" class="img-responsive shadow" /></a>
+                <h3 class="mg-md text-center">
+                    Samsung
+                </h3>
+                <p class="text-center">
+                    Home has a new hub.
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'img/Disp-Compatibles/1Whirlpool-Lavadora.jpeg' %}" class="img-responsive shadow" /></a>
+                <h3 class="mg-md text-center">
+                    Whirlpool
+                </h3>
+                <p class="text-center">
+                    Smart Front Load Washer with 6th Sense Live™ Technology.
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'img/Disp-Compatibles/1Yale-Mando.jpeg' %}" class="img-responsive shadow" /></a>
+                <h3 class="mg-md text-center">
+                    Yale
+                </h3>
+                <p class="text-center">
+                    Your locks, now smart.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bloc Group -->
+<div class='bloc-group mt-200'>
+
+
+<!-- Footer - bloc-12 -->
+<div class="bloc l-bloc bgc-white bloc-tile-3" id="bloc-12">
+    <div class="container bloc-lg">
+        <div class="row pb-50">
+            <div class="col-sm-12">
+                <h3 class="mg-md text-center f-60">
+                    ZOE HUB price
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="panel">
+                        <div class="panel-heading custom">    
+                            <img src="{% static 'img/ZOE_HUB.png' %}" class="img-responsive" style="background-color: #072733"/>
+                            <h2 class="mg-clear text-center">
+                                ZOE HUB
+                            </h2>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-unstyled list-sp-md">
+                                <li>
+                                    <h4 class="text-center mg-md">
+                                        Connecting all your smart devices<br>from one central place
+                                    </h4>
+                                </li>
+                                
+                                <li>
+                                    <h4 class="text-center mg-md">
+                                        Only $59.99 
+                                        <em class="small"> (Includes 3 months <br> subscription of ZOE AI*) </em>
+                                        
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4 class="text-center mg-md small">
+                                    <em> *Only for new accounts </em>
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="{% url 'buy' %}" class="btn btn-d btn-lg btn-sq btn-block">Buy</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer - bloc-12 END -->
+<!-- Bloc Group END -->
+
+<!-- https://d3abxbgmpfhmxi.cloudfront.net/assets/img/products/hub/products-hub.e9aba541.jpg -->
+
+{% endblock content %}

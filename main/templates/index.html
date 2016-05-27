@@ -1,0 +1,112 @@
+{% load staticfiles %}
+{% load textblock %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZOE | {% block title %}Smart indepence{% endblock title %}
+  </title>
+<!--
+Conquer Template
+http://www.templatemo.com/tm-476-conquer
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  {% include "topnavbar.html" %}
+
+  <div class="container-fluid">
+    {% block content %}
+    {% endblock content %}
+  </div>
+  <footer id="footer-area" class="shadow mt-100">{% include "footersection.html" %}</footer>
+
+
+<script src="{% static 'js/jquery-1.11.2.min.js' %}"></script>
+<script src="{% static 'js/jquery.scrollUp.min.js' %}"></script> <!-- https://github.com/markgoodyear/scrollup -->
+<script src="{% static 'js/jquery.singlePageNav.min.js' %}"></script> <!-- https://github.com/ChrisWojcik/single-page-nav -->
+<script src="{% static 'js/parallax.js-1.3.1/parallax.js' %}"></script> <!-- http://pixelcog.github.io/parallax.js/ -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script>
+
+    // HTML document is loaded. DOM is ready.
+    $(function() {  
+
+    // Parallax
+   //  $('.intro-section').parallax({
+   //   imageSrc: '{% static "img/bg-1.jpg" %}',
+   //   speed: 0.2
+   // });
+    $('.services-section').parallax({
+     imageSrc: '{% static "img/bg-2.jpg" %}',
+     speed: 0.2
+   });
+    $('.contact-section').parallax({
+     imageSrc: '{% static "img/bg-3.jpg" %}',
+     speed: 0.2
+   });
+    $('#video-frame').addClass("semitransparent");
+    $('#header-area > *').on("click", function (ev) {
+        $('#video-frame').removeClass("semitransparent");
+        $('#header-area div.transp-index').addClass("hidden");
+        
+ 
+        $("#video-frame")[0].src += "&autoplay=1";
+        ev.preventDefault();
+    });
+
+        // jQuery Scroll Up / Back To Top Image
+        $.scrollUp({
+                scrollName: 'scrollUp',      // Element ID
+		        scrollDistance: 300,         // Distance from top/bottom before showing element (px)
+		        scrollFrom: 'top',           // 'top' or 'bottom'
+		        scrollSpeed: 1000,            // Speed back to top (ms)
+		        easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+		        animation: 'fade',           // Fade, slide, none
+		        animationSpeed: 300,         // Animation speed (ms)		        
+		        scrollText: '', // Text for element, can contain HTML		        
+		        scrollImg: true            // Set true to use image		        
+          });
+
+        // ScrollUp Placement
+        $( window ).on( 'scroll', function() {
+
+            // If the height of the document less the height of the document is the same as the
+            // distance the window has scrolled from the top...
+            if ( $( document ).height() - $( window ).height() === $( window ).scrollTop() ) {
+
+                // Adjust the scrollUp image so that it's a few pixels above the footer
+                $('#scrollUp').css( 'bottom', '80px' );
+
+              } else {      
+                // Otherwise, leave set it to its default value.
+                $('#scrollUp').css( 'bottom', '30px' );        
+              }
+            });
+
+        $('.single-page-nav').singlePageNav({
+        	offset: $('.single-page-nav').outerHeight(),
+        	speed: 1500,
+        	filter: ':not(.external)',
+        	updateHash: true
+        });
+
+        $('.navbar-toggle').click(function(){
+        	$('.single-page-nav').toggleClass('show');
+        });
+
+        $('.single-page-nav a').click(function(){
+        	$('.single-page-nav').removeClass('show');
+        });
+        
+      });
+</script>
+</body>
+</html>

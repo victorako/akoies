@@ -1,0 +1,293 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+{% load textblock %}
+
+{% block title %} Uses {% endblock title %}
+
+{% block content %}
+<div class="bloc l-bloc bgc-white" id="bloc-15">
+    <div class="container pt-50">
+        <div class="row">
+            <div class="col-sm-3">
+            <a href="#security"><img src="{% static 'img/Uses-Security/cover-security.png' %}" class="img-responsive" />
+                <h3 class="mg-md text-center">
+                    Security
+                </h3>
+            </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#monitoring"> <img src="{% static 'img/Uses-Monitoring/cover-monitoring.jpg.png' %}" class="img-responsive" /> 
+                    
+                <h3 class="mg-md text-center">
+                    Monitoring
+                </h3>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#lightingenergy"> 
+                <img src="{% static 'img/Uses-lightening-eficiencia/cover-lighting.jpg.png' %}" class="img-responsive" />
+
+                <h3 class="mg-md text-center">
+                    Lighting & energy
+                </h3>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#comfortentertainment"> 
+                <img src="{% static 'img/Uses-Entertainment/cover-comfort.png' %}" class="img-responsive" /> 
+                <h3 class="mg-md text-center">
+                    Comfort & entertainment
+                </h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- security -->
+<div class="bloc l-bloc bgc-white mt-100">
+    <div class="container">
+        <div class="row pb-50">
+            <div class="col-sm-12">
+                <h3 class="mg-md text-center f-big" id="security">
+                    Security
+                </h3>
+                <p class="text-center f-25">
+                    A smarter, more affordable way to secure your home
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'img/Uses-Security/caso1.jpg' %}" class="img-responsive" />
+            </div>
+            <div class="col-sm-6">
+                <h2 class="mg-lg">
+                    Get instant alerts if there’s unexpected activity or movement inside your home
+                </h2>
+                
+                <p class="mg-lg">
+                    You can receive immediate alerts from your in-home sensors on your smartphone, get real-time images about any suspicious movement and alert the police if needed.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bloc l-bloc bgc-white mt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="mg-lg">
+                    Automatically lock and unlock your doors.
+                </h2>
+                <p class="mg-lg">
+                    When you leave for work each morning, ZOE will lock your doors automatically and unlock them when you arrive back. You can control each entry individually within the app and lock or unlock them on demand.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <img src="{% static 'img/Uses-Security/caso2.png' %}" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- monitoring -->
+<div class="bloc l-bloc bgc-white mt-200">
+    <div class="container">
+        <div class="row pb-50">
+            <div class="col-sm-12">
+                <h3 class="mg-md text-center f-big" id="monitoring">
+                    Monitoring
+                </h3>
+                <p class="text-center f-25">
+                    Stay connected to your home from anywhere. It learns with what you already have.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'img/Uses-Monitoring/cover-monitoring.jpg.png' %}" class="img-responsive" />
+            </div>
+            <div class="col-sm-6">
+                <h2 class="mg-lg">
+                    Get notifications when family members arrive or leave home. 
+                </h2>
+                
+                <p class="mg-lg">
+                    When a family member leaves or arrives home, send a notification to your smartphone or engage the cameras. 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bloc l-bloc bgc-white mt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="mg-lg">
+                    Prevent a leak from causing a flood.
+                </h2>
+                
+                <p class="mg-lg">
+                    Place a water leak sensor in areas of your home that are prone to leaking and prevent major damage by receiving an immediate alert if there's water where it doesn't belong. Zoe AI, will call the plumber if you want.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <img src="{% static 'img/Uses-Monitoring/leak.png' %}" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bloc l-bloc bgc-white mt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'img/Uses-Monitoring/caso3.jpg' %}" class="img-responsive" />
+            </div>
+            <div class="col-sm-6">
+                <h2 class="mg-lg">
+                    See graphics and learn more about how your home works.
+                </h2>
+                <p class="mg-lg">
+                    Reports about the lifestyles of who you care the most. Real time charts with the data you configure.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- lightingenergy -->
+<div class="bloc l-bloc bgc-white mt-200">
+    <div class="container">
+        <div class="row pb-50">
+            <div class="col-sm-12">
+                <h3 class="mg-md text-center f-big" id="lightingenergy">
+                    Lighting & energy
+                </h3>
+                <p class="text-center f-25">
+                    Total power in the palm of your hand.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'img/Uses-lightening-eficiencia/caso1.png' %}" class="img-responsive" />
+            </div>
+            <div class="col-sm-6">
+                <h2 class="mg-lg">
+                    Control, automate, and monitor your lights
+                </h2>
+                <p class="mg-lg">
+                    Automate your lights to be turned on or off adapting to the environment, the weather and light conditions, or get a notification when you left any light on.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bloc l-bloc bgc-white mt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="mg-lg">
+                    Automatically adapts the temperature of each room individually depending on the environment.
+                </h2>
+                <p class="mg-lg">
+                    Adapts the temperature in every room of your home depending on the environment. ZOE AI learns from the habits of each member of your family.  ZOE AI turns on or turn off depending if you leave or arrive at home for save energy.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <img src="{% static 'img/Uses-lightening-eficiencia/caso2.jpg' %}" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bloc l-bloc bgc-white mt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'img/Uses-lightening-eficiencia/caso3.jpg' %}" class="img-responsive" />
+            </div>
+            <div class="col-sm-6">
+                <h2 class="mg-lg">
+                    Save money on energy bills.
+                </h2>
+                <p class="mg-lg">
+                    In addition to helping you save money by automating temperature and lighting reducing your energy bill, you will decrease your carbon footprint.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- comfortentertainment -->
+<div class="bloc l-bloc bgc-white mt-200">
+    <div class="container">
+        <div class="row pb-50">
+            <div class="col-sm-12">
+                <h3 class="mg-md text-center f-big" id="comfortentertainment">
+                    Comfort & entertainment
+                </h3>
+                <p class="text-center f-25">
+                    Enhance your home with new features.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'img/Uses-Entertainment/caso1.png' %}" class="img-responsive" />
+            </div>
+            <div class="col-sm-6">
+                <h2 class="mg-lg">
+                    Listen to your favorite music playlist.
+                </h2>
+                <p class="mg-lg">
+                    ZOE AI will learn your habits, and when you arrive home will ask you if you want to listen your favourites lists in Spotify, Pandora, or Soundcloud.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bloc l-bloc bgc-white mt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="mg-lg">
+                    Prepare suggested recipes depending on the food expiring soon.
+                </h2>
+                <p class="mg-lg">
+                    ZOE AI knows which food is going to expire and will suggest a receipt for you. Besides ZOE AI will make a groceries list and ask you if you want to purchase it directly through Internet.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <img src="{% static 'img/Uses-Entertainment/samsung.jpg' %}" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bloc l-bloc bgc-white mt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'img/Uses-Entertainment/caso3.jpg' %}" class="img-responsive" />
+            </div>
+            <div class="col-sm-6">
+                <h2 class="mg-lg">
+                    Wake up with fresh brewed coffee
+                </h2>
+                <p class="mg-lg">
+                    Get freshly brewed coffee when you wake up, as ZOE AI knows when you are going to wake up and plan it.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

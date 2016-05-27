@@ -1,0 +1,52 @@
+{% load staticfiles %}
+{% load textblock %}
+
+{% comment "optional note" %}
+    
+<nav class="navbar navbar-fixed-top shadow" style="background-color: white;">
+    <div class="container pull-right">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+        </div>   
+        <div class="single-page-nav sticky-wrapper pull-right" id="tmNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'zoehub' %}">ZOE HUB</a></li>
+                <li><a href="{% url 'zoeai' %}">ZOE AI</a></li>
+                <li><a href="{% url 'uses' %}">Uses</a></li>
+                <li><a href="{% url 'buy' %}">Buy</a></li>
+                <li><a href="http://youtube.com">you</a></li>
+            </ul>
+        </div>   
+    </div>
+</nav>
+{% endcomment %}
+
+<div class="bloc bgc-white bg-repeat b-divider" id="nav-bloc">
+    <div class="container">
+        <nav class="navbar row">
+            <div class="navbar-header">
+            {% comment "optional note" %}
+                
+                <a class="navbar-brand" href="index.html"><img src="{% static 'img/ZOE-Smart-Independence.png' %}" alt="logo" /></a>
+            {% endcomment %}
+                <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-1">
+                <ul class="site-navigation nav navbar-nav">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'zoehub' %}">ZOE HUB</a></li>
+                    <li><a href="{% url 'zoeai' %}">ZOE AI</a></li>
+                    <li><a href="{% url 'uses' %}">Uses</a></li>
+                    <li><a href="{% url 'buy' %}">Buy</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>

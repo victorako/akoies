@@ -1,0 +1,51 @@
+{% load staticfiles %}
+{% load textblock %}
+<!-- Start Testimornial Area -->
+<section id="testimornial-area">
+<div class="container">
+    <div class="row text-center">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+            <div class="testimonial-content shadow">
+                <img src="{% static 'img/4-1.jpg' %}" alt="Image">
+
+                <h2>{% block_title 'testimonio1' user textblocks %}</h2>
+                <p>{% block_text 'testimonio1' user textblocks %}</p><br>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+            <div class="testimonial-content shadow">
+                <img src="{% static 'img/4-2.jpg' %}" alt="Image">
+                <h2>{% block_title 'testimonio2' user textblocks %}</h2>
+                <p>{% block_text 'testimonio2' user textblocks %}</p><br>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+            <div class="testimonial-content shadow">
+                <img src="{% static 'img/4-3.jpg' %}" alt="Image">
+                <h2>{% block_title 'testimonio3' user textblocks %}</h2>
+                <p>{% block_text 'testimonio3' user textblocks %}</p><br>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+            <div class="testimonial-content shadow">
+                <img src="{% static 'img/4-4.jpg' %}" alt="Image">
+                <h2>{% block_title 'testimonio4' user textblocks %}</h2>
+                <p>{% block_text 'testimonio4' user textblocks %}</p><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="tm-box shadow">
+                <img src="{% static 'img/4-5.jpg' %}" alt="Image" class="img-responsive">
+                <div class="tm-box-description">
+                    <h2>{% block_title 'bigtext' user textblocks %}</h2>
+                    <p>{% block_text 'bigtext' user textblocks %}</p><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- End Testimornial Area -->
